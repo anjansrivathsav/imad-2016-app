@@ -1,30 +1,13 @@
-<!doctype html>
-<html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="container">
-        <div class="center">
-            <img id='anji' src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xta1/v/t1.0-1/p130x130/11141168_364025170473193_2968110670915959260_n.jpg?oh=033174d8d1b0941c011bfeac6e4cff49&oe=58946E54&__gda__=1486286202_20eece21a693b02f9beb1e806ff4a07d" class="img-medium"/>
-        </div>
-        <hr/>
-        
-        <br>
-        <h3>personal</h3>
-        <div>
-            my name is anjan srivathsav
-        </div>
-        <hr/>
-        <br>
-        <h3>professional</h3>
-        <div>
-            iam studying at iiitvadodara
-        </div>
-        <hr/>
-        
-        </div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
-</html>
+console.log('Loaded!');
+var element=document.getElementById('main-txt');
+element.innerHTML='new value';
+var img =document.getElementById('anji');
+var marginLeft=0;
+function moveright(){
+  marginLeft=marginLeft+10;
+  img.style.marginLeft=marginLeft+'px';
+}
+
+img.onclick=function() {
+    var interval=setInterval(moveright,100);
+};
